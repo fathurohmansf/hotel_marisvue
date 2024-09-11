@@ -1,23 +1,6 @@
 <template>
   <header class="header">
-    <nav>
-      <div class="nav__bar">
-        <div class="logo">
-          <a href="#"><img src="assets/images/logo.png" alt="logo" /></a>
-        </div>
-        <div class="nav__menu__btn" id="menu-btn" @click="toggleMenu">
-          <i class="ri-menu-line"></i>
-        </div>
-      </div>
-      <ul class="nav__links" id="nav-links" :class="{ show: isMenuOpen }">
-        <li><a href="#home" @click="closeMenu">Home</a></li>
-        <li><a href="#about" @click="closeMenu">About</a></li>
-        <li><a href="#service" @click="closeMenu">Services</a></li>
-        <li><a href="#explore" @click="closeMenu">Explore</a></li>
-        <li><a href="#contact" @click="closeMenu">Contact</a></li>
-      </ul>
-      <button class="btn nav__btn">Book Now</button>
-    </nav>
+    <NavBarComponent />
     <div class="section__container header__container" id="home">
       <p>Simple - Unique - Friendly</p>
       <h1>
@@ -197,7 +180,12 @@
 </template>
 
 <script>
+import NavBarComponent from './components/NavBarComponent.vue';
+
 export default {
+  components: {
+    NavBarComponent,
+  },
   data() {
     return {
       isMenuOpen: false,
@@ -340,14 +328,6 @@ export default {
         },
       ],
     };
-  },
-  methods: {
-    toggleMenu() {
-      this.isMenuOpen = !this.isMenuOpen;
-    },
-    closeMenu() {
-      this.isMenuOpen = false;
-    },
   },
 };
 </script>
