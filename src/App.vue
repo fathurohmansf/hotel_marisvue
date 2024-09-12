@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <NavBarComponent />
+    <NavBar />
     <div class="section__container header__container" id="home">
       <p>Simple - Unique - Friendly</p>
       <h1>
@@ -180,11 +180,12 @@
 </template>
 
 <script>
-import NavBarComponent from './components/NavBarComponent.vue';
+import NavBar from './components/NavBar.vue';
+import ScrollReveal from 'scrollreveal';
 
 export default {
   components: {
-    NavBarComponent,
+    NavBar,
   },
   data() {
     return {
@@ -329,6 +330,24 @@ export default {
       ],
     };
   },
+  // name: 'ScrollComponent',
+  mounted() {
+    const scrollRevealOption = {
+      distance: '50px',
+      origin: 'bottom',
+      duration: 1000,
+  };
+  ScrollReveal().reveal('.header__container p', scrollRevealOption);
+    ScrollReveal().reveal('.header__container h1', { ...scrollRevealOption, delay: 500 });
+    ScrollReveal().reveal('.about__image img', { ...scrollRevealOption, origin: 'left' });
+    ScrollReveal().reveal('.about__content .section__subheader', { ...scrollRevealOption, delay: 500 });
+    ScrollReveal().reveal('.about__content .section__header', { ...scrollRevealOption, delay: 1000 });
+    ScrollReveal().reveal('.about__content .section__description', { ...scrollRevealOption, delay: 1500 });
+    ScrollReveal().reveal('.about__btn', { ...scrollRevealOption, delay: 2000 });
+    ScrollReveal().reveal('.room__card', { ...scrollRevealOption, interval: 500 });
+    ScrollReveal().reveal('.service__list li', { ...scrollRevealOption, interval: 500, origin: 'right' });
+    ScrollReveal().reveal('.room-details', { duration: 1000, origin: 'bottom', distance: '50px' });
+}
 };
 </script>
 

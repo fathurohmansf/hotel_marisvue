@@ -80,7 +80,7 @@ nav {
 
 <script>
 export default {
-  name: 'NavBarComponent',
+  name: 'NavBar',
   data() {
     return {
       isMenuOpen: false,  // Menyimpan status apakah menu terbuka atau tidak
@@ -96,4 +96,3 @@ export default {
   },
 };
 </script>
-
