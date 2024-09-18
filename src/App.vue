@@ -40,7 +40,7 @@
 
   <section class="section__container about__container" id="about">
     <div class="about__image">
-      <img src="assets/images/about.jpg" alt="about" />
+      <img src="assets/images/homemarisss.jpeg" alt="about" />
     </div>
     <div class="about__content">
       <p class="section__subheader">ABOUT US</p>
@@ -152,7 +152,7 @@ export default {
       rooms: [
         {
           id: 1,
-          image: "assets/images/room_familly/image-1.png",
+          image: "assets/images/familly_room.png",
           title: "Familly Room",
           description:
             "Bask in luxury with breathtaking ocean views from your private suite.",
@@ -162,7 +162,7 @@ export default {
         },
         {
           id: 2,
-          image: "assets/images/room_superior/image-1.jpg",
+          image: "assets/images/superior_room.png",
           title: "Superior Room",
           description:
             "Experience urban elegance and modern comfort in the heart of the city. <br>Included Breakfest.",
@@ -172,7 +172,7 @@ export default {
         },
         {
           id: 3,
-          image: "assets/images/room_standard/image-1.jpg",
+          image: "assets/images/standard_room.png",
           title: "Standard Room",
           description:
             "Spacious and inviting, perfect for creating cherished memories with loved ones.",

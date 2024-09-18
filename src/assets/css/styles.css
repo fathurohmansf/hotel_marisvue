@@ -365,7 +365,7 @@ body {
     padding-block: 3rem;
     display: grid;
     grid-template-columns: minmax(1rem, 1fr) minmax(0, var(--max-width)) minmax(1rem, 1fr);
-    background-image: url("@/assets/images/explore.jpg");
+    background-image: url("@/assets/images/cafe.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;

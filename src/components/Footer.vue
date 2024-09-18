@@ -48,7 +48,7 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
     <a
-      href="https://api.whatsapp.com/send?phone=+6282110858255&text=Halo%21%20Hotel Maris%20m%C3%A1s%20ingin booking kamar bisa ?%C3%B3n%20ingin bertanya%20dulu%202."
+      href="https://api.whatsapp.com/send?phone=+6282110858255&text=Halo%21%20Hotel Maris,%20Saya%20ingin booking kamar hari ini ada yang kosong ? %20ingin bertanya%20dulu."
       class="float"
       target="_blank"
     >
