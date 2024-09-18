@@ -86,34 +86,6 @@
   </section>
   <SwiperGallery />
 
-   <!-- Our Gallery -->
-   <!-- <section class="gallery">
-    <div class="container top">
-      <div class="heading">
-        <h1>PHOTOS</h1>
-        <h2>Our Gallery</h2>
-        <p>
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt
-        </p>
-      </div>
-    </div> -->
-
-    <!-- <div class="content mtop">
-      <div class="owl-carousel owl-carousel1 owl-theme">
-        <div class="items" v-for="image in galleryImages" :key="image.id">
-          <div class="img">
-            <img :src="item.src" :alt="'Photo ' + (index + 1)">
-          </div>
-          <div class="overlay">
-            <span class="fa fa-plus"> </span>
-            <h3>{{ item.title }}</h3>
-          </div>
-        </div>
-      </div>
-    </div> -->
-  <!-- </section> -->
-
   <section class="service" id="service">
     <div class="section__container service__container">
       <div class="service__content">
@@ -180,7 +152,7 @@ export default {
       rooms: [
         {
           id: 1,
-          image: "assets/images/room-1.jpg",
+          image: "assets/images/room_familly/image-1.png",
           title: "Familly Room",
           description:
             "Bask in luxury with breathtaking ocean views from your private suite.",
@@ -190,7 +162,7 @@ export default {
         },
         {
           id: 2,
-          image: "assets/images/room_superior.jpg",
+          image: "assets/images/room_superior/image-1.jpg",
           title: "Superior Room",
           description:
             "Experience urban elegance and modern comfort in the heart of the city. <br>Included Breakfest.",
@@ -200,7 +172,7 @@ export default {
         },
         {
           id: 3,
-          image: "assets/images/room-3.jpg",
+          image: "assets/images/room_standard/image-1.jpg",
           title: "Standard Room",
           description:
             "Spacious and inviting, perfect for creating cherished memories with loved ones.",
@@ -253,24 +225,6 @@ export default {
         title: "A New Menu Is Available In Our Hotel.",
         buttonText: "Continue",
       },
-      galleryImages: [
-        {
-          id: 1,
-          url: 'assets/images/room-1.jpg',
-          title: 'Photo Title 1',
-        },
-        {
-          id: 2,
-          url: 'assets/images/room-2.jpg',
-          title: 'Photo Title 2',
-        },
-        {
-          id: 3,
-          url: 'assets/images/room-3.jpg',
-          title: 'Photo Title 3',
-        },
-        // Tambahkan gambar lainnya di sini
-      ],
     };
   },
   mounted() {
@@ -296,9 +250,4 @@ export default {
 
 <style>
 @import './assets/css/styles.css';
-.gallery .items .img img {
-  width: 320px;
-  height: 320px;
-  object-fit: cover; /* Opsional: Untuk memastikan gambar terisi penuh di area yang ditentukan dan proporsi tetap terjaga */
-}
 </style>
