@@ -75,12 +75,18 @@ export default {
   data() {
     return {
       images: [
-        { src: require('@/assets/images/gallery/room-1.jpg'), alt: 'Image 1', title: 'Photography', description: 'Lorem ipsum dolor sit amet consectetur.' },
-        { src: require('@/assets/images/gallery/room-2.jpg'), alt: 'Image 2', title: 'Photography', description: 'Lorem ipsum dolor sit amet consectetur.' },
-        { src: require('@/assets/images/gallery/room-3.jpg'), alt: 'Image 3', title: 'Photography', description: 'Lorem ipsum dolor sit amet consectetur.' },
-        { src: require('@/assets/images/gallery/image4.jpg'), alt: 'Image 1', title: 'Photography', description: 'Lorem ipsum dolor sit amet consectetur.' },
-        { src: require('@/assets/images/gallery/image5.jpg'), alt: 'Image 2', title: 'Photography', description: 'Lorem ipsum dolor sit amet consectetur.' },
-        { src: require('@/assets/images/gallery/image6.jpg'), alt: 'Image 3', title: 'Photography', description: 'Lorem ipsum dolor sit amet consectetur.' },
+        { src: require('@/assets/images/gallery/leuit_meeting.png'), alt: 'leuit_meeting', title: 'Leuit Meeting', description: 'Lorem ipsum dolor sit amet consectetur.' },
+        { src: require('@/assets/images/gallery/gazebo_meeting.jpg'), alt: 'gazebo_meeting', title: 'Gazebo Meeting', description: 'Lorem ipsum dolor sit amet consectetur.' },
+        { src: require('@/assets/images/gallery/image-1.jpg'), alt: 'Image 1', title: 'Photography', description: 'Lorem ipsum dolor sit amet consectetur.' },
+        { src: require('@/assets/images/gallery/image-2.jpg'), alt: 'Image 2', title: 'Photography', description: 'Lorem ipsum dolor sit amet consectetur.' },
+        { src: require('@/assets/images/gallery/image-3.jpg'), alt: 'Image 3', title: 'Photography', description: 'Lorem ipsum dolor sit amet consectetur.' },
+        { src: require('@/assets/images/gallery/familly_room.png'), alt: 'familly_room', title: 'Familly Room', description: 'Lorem ipsum dolor sit amet consectetur.' },
+        { src: require('@/assets/images/gallery/superior_room.png'), alt: 'superior_room', title: 'Superior Room', description: 'Lorem ipsum dolor sit amet consectetur.' },
+        { src: require('@/assets/images/gallery/standard_room.png'), alt: 'standard_room', title: 'Standard Room', description: 'Lorem ipsum dolor sit amet consectetur.' },
+        { src: require('@/assets/images/gallery/image-4.jpg'), alt: 'Image 4', title: 'Photography', description: 'Lorem ipsum dolor sit amet consectetur.' },
+        { src: require('@/assets/images/gallery/image-5.jpg'), alt: 'Image 5', title: 'Photography', description: 'Lorem ipsum dolor sit amet consectetur.' },
+        { src: require('@/assets/images/gallery/image-6.jpg'), alt: 'Image 6', title: 'Photography', description: 'Lorem ipsum dolor sit amet consectetur.' },
+        { src: require('@/assets/images/gallery/image-7.jpg'), alt: 'Image 7', title: 'Photography', description: 'Lorem ipsum dolor sit amet consectetur.' },
         // Tambahkan gambar lainnya jika diperlukan
       ],
       modules: [EffectCoverflow, Pagination, Autoplay],
