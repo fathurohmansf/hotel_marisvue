@@ -84,6 +84,35 @@
       </div>
     </div>
   </section>
+  <SwiperGallery />
+
+   <!-- Our Gallery -->
+   <!-- <section class="gallery">
+    <div class="container top">
+      <div class="heading">
+        <h1>PHOTOS</h1>
+        <h2>Our Gallery</h2>
+        <p>
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt
+        </p>
+      </div>
+    </div> -->
+
+    <!-- <div class="content mtop">
+      <div class="owl-carousel owl-carousel1 owl-theme">
+        <div class="items" v-for="image in galleryImages" :key="image.id">
+          <div class="img">
+            <img :src="item.src" :alt="'Photo ' + (index + 1)">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>{{ item.title }}</h3>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  <!-- </section> -->
 
   <section class="service" id="service">
     <div class="section__container service__container">
@@ -120,6 +149,16 @@
       </div>
     </div>
   </section>
+    <!-- maps -->
+    <section class="explore map top" id="explore">
+      <br>
+    <p class="section__subheader">MAPS</p>
+    <h2 class="section__header">Hotel Maris | RANGKASBITUNG.</h2>
+    <section class="">
+      <iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ7ch2U84RQi4Rh-2bJzSmJt0&key=AIzaSyCjgdqvldgbtOkkOCxqtSZPVd3F9zqmOM8" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+  </section>
+
   <Footer />
 </template>
 
@@ -127,11 +166,13 @@
 import NavBar from './components/NavBar.vue';
 import ScrollReveal from 'scrollreveal';
 import Footer from './components/Footer.vue';
+import SwiperGallery from './components/SwiperGallery.vue';
 
 export default {
   components: {
     NavBar,
     Footer,
+    SwiperGallery,
   },
   data() {
     return {
@@ -212,7 +253,24 @@ export default {
         title: "A New Menu Is Available In Our Hotel.",
         buttonText: "Continue",
       },
-      
+      galleryImages: [
+        {
+          id: 1,
+          url: 'assets/images/room-1.jpg',
+          title: 'Photo Title 1',
+        },
+        {
+          id: 2,
+          url: 'assets/images/room-2.jpg',
+          title: 'Photo Title 2',
+        },
+        {
+          id: 3,
+          url: 'assets/images/room-3.jpg',
+          title: 'Photo Title 3',
+        },
+        // Tambahkan gambar lainnya di sini
+      ],
     };
   },
   mounted() {
@@ -231,11 +289,16 @@ export default {
     ScrollReveal().reveal('.room__card', { ...scrollRevealOption, interval: 500 });
     ScrollReveal().reveal('.service__list li', { ...scrollRevealOption, interval: 500, origin: 'right' });
     ScrollReveal().reveal('.room-details', { duration: 1000, origin: 'bottom', distance: '50px' });
-}
+},
 };
 </script>
 
 
 <style>
 @import './assets/css/styles.css';
+.gallery .items .img img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover; /* Opsional: Untuk memastikan gambar terisi penuh di area yang ditentukan dan proporsi tetap terjaga */
+}
 </style>
