@@ -20,6 +20,10 @@
           1024: {
             slidesPerView: 3,  // Desktop
             spaceBetween: 30
+          },
+          1440: {
+            slidesPerView: 4,  // Desktop large
+            spaceBetween: 30
           }
         }"
         :loop="true"

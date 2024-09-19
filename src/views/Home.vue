@@ -51,7 +51,9 @@
         traveler embarks on their dream holiday with confidence and excitement.
       </p>
       <div class="about__btn">
-        <button class="btn">Read More</button>
+        <router-link to="/about" class="btn">
+          Read More
+        </router-link>
       </div>
     </div>
   </section>
@@ -167,10 +169,10 @@ export default {
           image: "assets/images/superior_room.png",
           title: "Superior Room",
           description:
-            "Experience urban elegance and modern comfort in the heart of the city. <br>Included Breakfest.",
+            "Experience urban elegance and modern. <br>Included Breakfest.",
           price: "Rp. 400,000/night",
           link: "/superior_room",
-          buttonText: "Book Now",
+          buttonText: "Details Room",
         },
         {
           id: 3,
@@ -180,7 +182,7 @@ export default {
             "Spacious and inviting, perfect for creating cherished memories with loved ones.",
           price: "Rp. 350.000/night",
           link: "/standard_room",
-          buttonText: "Book Now",
+          buttonText: "Details Room",
         },
       ],
       services: [

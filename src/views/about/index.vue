@@ -35,7 +35,7 @@
             class="bg-white w-full p-5 border border-gray-400 rounded-20 sticky"
             style="top: 15px"
           >
-            <h3>Room Type:</h3>
+            <h3>Hotel Type:</h3>
             <div class="flex mt-3">
               <div class="w-1/4">
                 <img :src="leaderImage" alt="" class="w-full inline-block rounded-full" />
@@ -53,7 +53,7 @@
               <li v-for="perk in perks" :key="perk">{{ perk }}</li>
             </ul>
             <br>
-            <div><p class="ml-auto font-semibold text-2xl">Rp. 300,000 / night</p></div>
+            <!-- <div><p class="ml-auto font-semibold text-2xl">Rp. 300,000 / night</p></div> -->
             <a
               href="https://api.whatsapp.com/send?phone=+6282110858255&text=Halo%21%20Hotel Maris,%20Saya%20ingin booking kamar hari ini ada yang kosong ? %20ingin bertanya%20dulu."
               class="text-center mt-3 button-cta block w-full bg-orange-button hover:bg-green-button text-white font-medium px-6 py-3 text-md rounded-full"
@@ -93,7 +93,7 @@ import Footer from '../../components/Footer.vue';
 import '../../assets/css/tailwind.css';
 
 export default {
-  name: 'RoomFamilly',
+  name: 'AboutPage',
   components: {
     NavBar,
     Footer,
@@ -106,7 +106,7 @@ export default {
         require('@/assets/images/room_familly/image-2.png'),
       ],
       leaderImage: require('@/assets/images/logo.png'),
-      leaderName: 'Familly Room',
+      leaderName: 'Hotel MARIS',
       roomPrice: 500000, // Harga per malam
       perks: ['Wi-Fi gratis', 'Sarapan gratis', 'Kolam renang'],
       nights: 1,

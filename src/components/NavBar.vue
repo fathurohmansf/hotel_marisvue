@@ -15,7 +15,10 @@
         <li><a href="#explore" @click="closeMenu">Explore</a></li>
         <li><a href="#contact" @click="closeMenu">Contact</a></li>
       </ul>
-      <button class="btn nav__btn">Book Now</button>
+      <a
+        href="https://api.whatsapp.com/send?phone=+6282110858255&text=Halo%21%20Hotel Maris,%20Saya%20ingin booking kamar hari ini ada yang kosong ? %20ingin bertanya%20dulu."
+        class="btn nav__btn">Book Now
+      </a>
     </nav>
 </template>
 

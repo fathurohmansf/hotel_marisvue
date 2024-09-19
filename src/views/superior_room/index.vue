@@ -93,17 +93,17 @@ import Footer from '../../components/Footer.vue';
 import '../../assets/css/tailwind.css';
 
 export default {
-  name: 'RoomFamilly',
+  name: 'RoomSuperior',
   components: {
     NavBar,
     Footer,
   },
   data() {
     return {
-      defaultImage: require('@/assets/images/room_familly/image-1.png'),
+      defaultImage: require('@/assets/images/room_superior/image-1.png'),
       images: [
-        require('@/assets/images/room_familly/image-1.png'),
-        require('@/assets/images/room_familly/image-2.png'),
+        require('@/assets/images/room_superior/image-1.png'),
+        require('@/assets/images/room_superior/image-2.png'),
       ],
       leaderImage: require('@/assets/images/logo.png'),
       leaderName: 'Familly Room',
