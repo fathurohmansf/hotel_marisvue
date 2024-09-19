@@ -10,7 +10,7 @@
           curated selection of hotels, making every moment of your getaway truly
           extraordinary.
         </p>
-        <a 
+        <a
         href="https://api.whatsapp.com/send?phone=+6282110858255&text=Halo%21%20Hotel Maris,%20Saya%20ingin booking kamar hari ini ada yang kosong ? %20ingin bertanya%20dulu."
         class="btn">Book Now
       </a>
